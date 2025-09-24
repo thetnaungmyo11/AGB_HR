@@ -372,9 +372,9 @@ class LeaveRequestForm {
                                     </label>
                                     <input type="date" name="request_date_to" class="form-control" required>
                                 </div>
-                                <div style="font-weight: 600; color: #D32F2F; font-size: 14px;">
+                                <div style="font-weight: 600; color: #D32F2F; font-size: 14px; display: flex; align-items: center; gap: 8px;">
                                     <input type="checkbox" name="half_day" id="half_day">
-                                    <label for="half_day_to">Half Day</label>
+                                    <label for="half_day">Half Day</label>
                                 </div>
                             </div>
                             

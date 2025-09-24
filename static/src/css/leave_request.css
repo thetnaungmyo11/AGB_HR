@@ -18,10 +18,18 @@ body {
 /* Main Container */
 .agb-container {
   min-height: 100vh;
-  padding: 20px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Leave Request Container - Updated for consistency */
+.leave-request-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 /* Company Header */
@@ -139,6 +147,7 @@ body {
 .leave-request-container {
   width: 100%;
   max-width: 1200px;
+  padding: 0 20px;
   animation: fadeInUp 0.8s ease-out;
 }
 
@@ -380,10 +389,18 @@ body {
 
 /* Date Range */
 .date-range {
-  display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
-  align-items: end;
+}
+
+/* Desktop layout for date range */
+@media (min-width: 768px) {
+  .date-range {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: end;
+  }
 }
 
 .form-row {
